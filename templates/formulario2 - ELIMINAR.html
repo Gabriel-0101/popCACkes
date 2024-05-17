@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/imagenes/icono.ico">
+
+    <title>PUBLICAR RECETA - popCACkes</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oregano:ital@0;1&display=swap"
+        rel="stylesheet">
+
+    <!-- font awasome -->
+    <script src="https://kit.fontawesome.com/d419a23d09.js" crossorigin="anonymous"></script>
+
+    <!-- link a css -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+
+
+    <header class="header">
+        <nav class="nav">
+
+            <!-- logo -->
+            <div class="logo-pagina-inicio" id="logo-pagina-inicio">
+                <a href="/index.html">
+                    <i class="logo-inicio fa-solid fa-cake-candles fa-bounce" ></i>
+                    <span class="inicio-texto"><b>popCACkes</b></span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main> <!-- *************************************************** -->
+        <form class="formulario" id="formulario">
+
+            <!-- grupo Titulo Receta -->
+            <div class="formulario-grupo" id="grupo-titulo-receta">
+                <label for="titulo-receta" class="formulario-label">TITULO DE LA RECETA</label>
+                <div class="formulario-grupo-input">
+                    <input type="text" class="formulario-input" name="titulo-receta" id="titulo-receta" required
+                        placeholder="Por favor, ingrese un título para la receta:">
+                    <i class="formulario-validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario-input-error"><b>ERROR</b>: Verifique haber ingresado correctamente el
+                    título.</p>
+            </div> <!-- FIN grupo Titulo Receta -->
+
+            <!-- grupo Dificultad -->
+            <div class="formulario-grupo" id="grupo-dificultad">
+                <label for="dificultad" class="formulario-label">NIVEL DE DIFICULTAD</label>
+                <div class="formulario-grupo-input">
+                    <select class="formulario-input" name="dificultad" id="dificultad">
+                        <option value="">Seleccione el nivel de dificultad...</option>
+                        <option value="bajo">Bajo</option>
+                        <option value="medio">Medio</option>
+                        <option value="alto">Alto</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- grupo Duración -->
+            <div class="formulario-grupo" id="grupo-duracion">
+                <label for="apellido" class="formulario-label">DURACIÓN</label>
+                <div class="formulario-grupo-input">
+                    <input type="text" class="formulario-input" name="duracion" id="duracion" required
+                        placeholder="Indique el tiempo que demanda el procedimiento:">
+                    <i class="formulario-validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario-input-error"><b>ERROR</b>: Verifique haber ingresado correctamente la
+                    Duración</p>
+            </div>
+
+            <!-- grupo Ingredientes -->
+            <div class="formulario-grupo" id="grupo-ingredientes">
+                <label for="ingredientes" class="formulario-label">INGREDIENTES</label>
+                <div class="formulario-grupo-input">
+
+                    <textarea rows="6" class="formulario-textarea" name="ingredientes" id="ingredientes" placeholder="Ingrese el detalle completo de los ingredientes:" required></textarea>
+                    
+                    <i class="formulario-validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario-input-error"><b>ERROR</b>: Verifique haber ingresado correctamente los
+                    ingredientes. </p>
+            </div>
+
+            <!-- grupo Procedimiento -->
+            <div class="formulario-grupo" id="grupo-procedimiento">
+                <label for="procedimiento" class="formulario-label">PROCEDIMIENTO</label>
+                <div class="formulario-grupo-input">
+
+                    <textarea rows="6" class="formulario-textarea" name="procedimiento" id="procedimiento" placeholder="Ingrese el desarrollo completo del procedimiento:" required></textarea>
+                    
+                    <i class="formulario-validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario-input-error"><b>ERROR</b>: Verifique haber ingresado correctamente el procedimiento. </p>
+            </div>
+
+            <!-- Adjunte receta -->
+            <div class="formulario-grupo" id="adjuntar-receta">
+                <label for="adjunto" class="formulario-label">IMAGEN DE LA RECETA</label>
+                <div class="formulario-grupo-input">
+                    <input type="file" class="formulario-input" name="adjunto">
+                </div>
+            </div>
+
+            <!-- grupo Boton -->
+            <div class="formulario-grupo formulario-grupo-boton">
+                <button type="submit" class="formulario-boton">ENVIAR RECETA</button>
+                <p class="formulario-mensaje-exito" id="formulario-mensaje-exito">Formulario enviado con éxito.</p>
+            </div>
+
+        </form>
+    </main>
+
+    <footer id="footer">
+        <a href="">Términos y condiciones</a>
+        <a href="">Preguntas frecuentes</a>
+        <a href="">Ayuda</a>
+
+        <div class="redes-sociales">
+            <a href="https://www.whatsapp.com/" target="_blank">
+                <i class="fa-brands fa-whatsapp fa-beat-fade"></i>
+
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram fa-beat"></i>
+
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-square-facebook fa-beat"></i>
+
+            </a>
+
+        </div>
+
+
+
+
+    </footer>
+    <!-- link a javascript -->
+    <script src="/static/javascript/formulario.js"></script>
+</body>
+
+
+</html>
